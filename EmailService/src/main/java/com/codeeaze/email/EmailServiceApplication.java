@@ -16,7 +16,6 @@ public class EmailServiceApplication {
         mail.setMailTo("sheikhparvez.oist@gmail.com");
         mail.setMailSubject("Spring Boot - Email Example");
         mail.setMailContent("Learn How to send Email using Spring Boot!!!\n\nThanks\nwww.codeeaze.com");
- 
         ApplicationContext ctx = SpringApplication.run(EmailServiceApplication.class, args);
         MailService mailService = (MailService) ctx.getBean("mailService");
         mailService.sendEmail(mail); 
