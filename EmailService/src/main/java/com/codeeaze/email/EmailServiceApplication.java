@@ -19,7 +19,7 @@ public class EmailServiceApplication {
  
         ApplicationContext ctx = SpringApplication.run(EmailServiceApplication.class, args);
         MailService mailService = (MailService) ctx.getBean("mailService");
-        mailService.sendEmail(mail);
+        mailService.sendEmail(mail); 
 //        mailService.sendEmailWithAttachment(mail);
 	}
 
